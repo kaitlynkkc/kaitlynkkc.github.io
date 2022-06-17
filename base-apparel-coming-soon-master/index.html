@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script src="index.js" defer></script>
+</head>
+<body>
+  
+  <img class="logo" src="./images/logo.svg">
+
+  <div class="flex">
+    <picture>
+      <source media="(min-width: 45rem)" srcset="./images/hero-desktop.jpg">
+      <img class="hero" src="./images/hero-mobile.jpg" alt="Female model in an orange shirt">
+    </picture>
+
+    <main id="main" class="container">
+      <h1 class="text-dark uppercase fw-600 "><span class="text-light fw-300">We're</span> coming soon</h1>
+
+      <p class="fw-700">Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+      <div>
+        <form class="flex" name="emailForm" onsubmit="return validateForm()">
+          <input type="text" id="email" name="email" placeholder="Email Address" title="Email Address">
+          <input type="image" id="error" name="error" src="./images/icon-error.svg" alt="error" hidden>
+          <input type="image" id="submit" name="submit" src="./images/icon-arrow.svg" alt="Submit">
+        </form>
+        <p id="invalid" hidden>Please provide a valid email</p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/kaitlynkkc">Kaitlyn Campbell</a>.
+    </p>
+  </footer>
+</body>
+</html>
