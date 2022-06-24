@@ -19,14 +19,16 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <script src="index.js" defer></script>
 </head>
 <body>
   <img class="logo" src="./images/logo.svg" alt="logo">
-  <div class="card bg-white">
-    <form class="form flex">
+  <div class="card bg-white flex">
+    <form class="form flex" name="billForm" onsubmit="return validateForm()">
       <div>
         <label for="bill">Bill</label><br>
-        <input type="text" id="bill" name="bill" placeholder="142.55"><br>
+        <input class="text-very-dark-cyan bg-very-light-grayish-cyan" type="text" id="bill" name="bill" placeholder="0"><br>
       </div>
       <div>
         <label for="tips">Select Tip %</label>
@@ -41,33 +43,33 @@
             <label class="tip bg-very-dark-cyan text-white" for="25">25%</label>
             <input type="radio" id="50" name="tip" value="50%">
             <label class="tip bg-very-dark-cyan text-white" for="50">50%</label>
-            <input type="radio" id="custom" name="tip" value="Custom">
-            <label class="custom tip bg-very-light-grayish-cyan" for="custom">Custom</label>
+            <input class="tip bg-very-light-grayish-cyan text-very-dark-cyan" type="text" id="custom" name="tip" placeholder="Custom">
           </div>
       </div>
       <div>
         <label for="people">Number of People</label><br>
-        <input type="text" id="people" name="people" placeholder="5">
+        <input class="text-very-dark-cyan bg-very-light-grayish-cyan" type="text" id="people" name="people" placeholder="0">
       </div>
     </form>
 
     <div class="result bg-very-dark-cyan flex">
-      <div class="result-amount flex">
-        <div>
-          <h2 class="text-very-light-grayish-cyan">Tip Amount</h2>
-          <h3 class="text-grayish-cyan">/ person</h3>
+      <div>
+        <div class="result-amount flex">
+          <div>
+            <h2 class="text-very-light-grayish-cyan">Tip Amount</h2>
+            <h3 class="text-grayish-cyan">/ person</h3>
+          </div>
+          <p class="text-strong-cyan">$0.00</p>
         </div>
-        <p class="text-strong-cyan">$4.27</p>
-      </div>
 
-      <div class="result-amount flex">
-        <div>
-          <h2 class="text-very-light-grayish-cyan">Total</h2>
-          <h3 class="text-grayish-cyan">/ person</h3>
+        <div class="result-amount flex">
+          <div>
+            <h2 class="text-very-light-grayish-cyan">Total</h2>
+            <h3 class="text-grayish-cyan">/ person</h3>
+          </div>
+          <p class="text-strong-cyan">$0.00</p>
         </div>
-        <p class="text-strong-cyan">$32.79</p>
       </div>
-
       <button class="bg-strong-cyan text-very-dark-cyan reset">Reset</button>
     </div>
   </div>
