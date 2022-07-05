@@ -33,7 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [@kaitlynkkc](https://github.com/kaitlynkkc/Frontend-Mentor-Order-Summary-Component)
+- Solution URL: [https://github.com/kaitlynkkc/Frontend-Mentor-Base-Apparel](https://github.com/kaitlynkkc/Frontend-Mentor-Base-Apparel)
+- Live Site URL: [https://kaitlynkkc.github.io/base-apparel-coming-soon-master/index.html](https://kaitlynkkc.github.io/base-apparel-coming-soon-master/index.html)
 
 ## My process
 
@@ -54,5 +55,5 @@ Users should be able to:
 
 ## Author
 
-- Github - [Kaitlyn Campbell](https://github.com/kaitlynkkc)
+- Github - [@kaitlynkkc](https://github.com/kaitlynkkc)
 - Frontend Mentor - [@kaitlynkkc](https://www.frontendmentor.io/profile/kaitlynkkc)

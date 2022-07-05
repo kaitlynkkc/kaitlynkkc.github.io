@@ -6,19 +6,125 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        
+    <header class="primary-header flex">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+        <nav>
+            <ul class="primary-navigation">
+            <li><a class="text-light-teal" href="#">Projects</a></li>
+            <li><a class="text-light-teal" href="#">About</a></li> 
+            <li><a class="text-light-teal" href="#">Contact</a></li> 
+            </ul>
+        </nav>
     </header>
-    <main class="intro">
-        <h1>Hello! I'm Kaitlyn.</h1>
+    <main class="welcome">
+        <h1 class="text-dark-teal">Hi! I'm Kaitlyn. 👋</h1>
+        <h2 class="text-light-teal">New Grad . Aspiring Web Designer/Developer</h2>
     </main>
-    <section class="portfolio">
-        <h2>Portfolio</h2>
-        <a href="qr-code-component-main/index.html"><h2>QR Code Component</h2></a>
-        <a href="order-summary-component-main/index.html"><h2>Order Summary Component</h2></a>
-        <a href="base-apparel-coming-soon-master/index.html"><h2>Base Apparel Coming Soon</h2></a>
-        <a href="good-place-website/index.html"><h2>The Good Place Website</h2></a>
-        <a href="tip-calculator-app-main/index.html"><h2>Tip Calculator App</h2></a>
+    <section class="projects">
+        <h2 class="text-dark-teal">Projects</h2>
+        <div class="flex projects-head">
+            <h3 class="text-light-teal">Front End Dev</h3>
+            <a href="#">See More</a>
+        </div>
+        <div>
+            <a href="tip-calculator-app-main/index.html">Tip Calculator App</a>
+            <a href="good-place-website/index.html">The Good Place Website</a>
+            <a href="base-apparel-coming-soon-master/index.html">Base Apparel Coming Soon</a>
+            <a href="qr-code-component-main/index.html">QR Code Component</a>
+            <a href="order-summary-component-main/index.html">Order Summary Component</a>
+        </div>
+        <div class="flex projects-head">
+            <h3 class="text-light-teal">Design</h3>
+            <a href="#">See More</a>
+        </div>
+        <div>
+            <a href="#">CandyCart</a>
+            <a href="#">The Good Website</a>
+            <a href="#">Seaside Library</a>
+            <a href="#">Rooftop Films</a>
+            <a href="#">U-Pick</a>
+        </div>
+    </section>
+    <section class="about">
+        <h2 class="text-dark-teal">About Me</h2>
+        <img src="./images/headshot.svg" alt="Photo of me - Kaitlyn">
+        <p>Hello! My name is Kaitlyn. I'm a new graduate of Ouachita Baptist University, 
+            and I completed a Bachelor of Science in Computer Science with a double minor 
+            in Graphic Design and Mathematics in May 2022. I am an aspiring web developer 
+            with design experience and a passion for UX. I am currently looking for a career 
+            and a community!<br>
+            In my free time, I have a variety of interests. I play the french horn and piano, 
+            and I love to play Animal Crossing, Mario Kart, and Jackbox. I also enjoy reading and 
+            going to the movie theater. </p>
+    </section>
+    <section class="skills">
+        <h2 class="text-dark-teal">Skills</h2>
+        <div>
+            <div class="skill">
+                <img src="./images/adobe.svg" alt="Adobe Creative Suite logo">
+                <p>Adobe Creative Suite</p>
+            </div>
+            <div class="skill">
+                <img src="./images/html.svg" alt="HTML5 logo">
+                <p>HTML5</p>
+            </div>
+            <div class="skill">
+                <img src="./images/css.svg" alt="CSS3 logo">
+                <p>CSS3</p>
+            </div>
+            <div class="skill">
+                <img src="./images/js.svg" alt="Javascript logo">
+                <p>Javascript</p>
+            </div>
+            <div class="skill">
+                <img src="./images/accessibility.svg" alt="Universal Accessibility logo">
+                <p>Accessibility</p>
+            </div>
+            <div class="skill">
+                <img src="./images/github.svg" alt="Github logo">
+                <p>Github</p>
+            </div>
+            <div class="skill">
+                <img src="./images/visual_studio.svg" alt="Visual Studio Code logo">
+                <p>Visual Studio Code</p>
+            </div>
+            <div class="skill">
+                <img src="./images/android.svg" alt="Android Studio logo">
+                <p>Android Studio</p>
+            </div>
+            <div class="skill">
+                <img src="./images/kotlin.svg" alt="Kotlin logo">
+                <p>Kotlin</p>
+            </div>
+            <div class="skill">
+                <img src="./images/godot.svg" alt="Godot logo">
+                <p>Godot</p>
+            </div>
+            <div class="skill">
+                <img src="./images/unity.svg" alt="Unity logo">
+                <p>Unity</p>
+            </div>
+            <div class="skill">
+                <img src="./images/java.svg" alt="Java logo">
+                <p>Java</p>
+            </div>
+        </div>
+        <a class="resume text-dark-teal bg-yellow">Full Resume</a>
+    </section>
+    <section class="contact">
+        <h2 class="text-dark-teal">Contact</h2>
+        <a href="#">Email</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Github</a>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message"><br>
+            <input class="send text-dark-teal bg-yellow" type="submit" value="Send">
+        </form>
     </section>
 </body>
 </html>

@@ -27,7 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [@kaitlynkkc](https://github.com/kaitlynkkc/Frontend-Mentor-Order-Summary-Component)
+- Solution URL: [https://github.com/kaitlynkkc/Frontend-Mentor-Order-Summary-Component](https://github.com/kaitlynkkc/Frontend-Mentor-Order-Summary-Component)
+- Live Site URL: [https://kaitlynkkc.github.io/order-summary-component-main/index.html](https://kaitlynkkc.github.io/order-summary-component-main/index.html)
 
 ## My process
 
