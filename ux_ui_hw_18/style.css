@@ -1,0 +1,407 @@
+/* General */
+:root{
+    /* Custom Colors */
+    --cream: #FAF5EF;
+    --light-yellow: #FFECC6;
+    --yellow: #FED480;
+    --red: #EC7C6A;
+    --green: #00715D;
+    --blue: #01426A;
+    --black: #1E1E1E;
+    --dark-gray: #303030;
+    /* Font Weights */
+    --fw-regular: 400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    /* Font Sizes */
+    /* desktop */
+    --h2-d: 3.25rem;
+    --h3-d: 2.5rem;
+    --h4-d: 1.75rem;
+    --h5-d: 1.25rem;
+    --p-d: 1.125rem;
+    --small-d: 1rem;
+    /* mobile */
+    --h2-m: 2.5rem;
+    --h3-m: 1.5rem;
+    --h4-m: 1.3125rem;
+    --h5-m: 1.125rem;
+    --p-m: 1rem;
+    --small-m: 0.875rem;
+    /* General Document Styles */
+    background-color: var(--cream);
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+body {
+    margin: 20px 50px;
+}
+h1, h2 {
+    font-size: var(--h2-d);
+    font-weight: var(--fw-semibold);
+}
+.desktop-hide {
+    display: none;
+}
+.inline-block {
+    display: inline-block;
+}
+.flex {
+    display: flex;
+}
+/* Header */
+.logo img {
+    width: 200px;
+    margin-bottom: -6px;
+    cursor: pointer;
+}
+nav {
+    float: right;
+    padding: 20px 0;
+    margin-top: 6px;
+    margin-bottom: -8px;
+}
+.tabs-list {
+    padding: 10px 0;
+    list-style: none;
+}
+.tabs-list > * {
+    margin-left: 70px;
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+    cursor: pointer;
+}
+.about-tab {
+    text-decoration: underline;
+}
+.account-tab {
+    padding: 0;
+}
+#account-img {
+    margin-bottom: -5px;
+    width: 30px;
+}
+/* Hero Section */
+.hero {
+    justify-content: space-between;
+    align-items: center;
+}
+.hero img {
+    width: 50%;
+    height: 50%;
+}
+.hero-content {
+    width: 44.5%;
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+}
+.hero-content h3 {
+    background-image: url("./images/subhead-highlight.png");
+    background-position: 1rem 1.5rem;
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    font-size: inherit;
+    font-weight: 700;
+}
+/* Meet the Team Section */
+.team {
+    height: 105vh;
+    margin: 0 -50px;
+    background-image: url("./images/wave\ background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.team-content {
+    align-self: center;
+    color: var(--cream);
+    margin: -10px 50px;
+}
+.team-content h2 {
+    margin-top: 0;
+    font-size: var(--h2-d);
+    font-weight: var(--fw-semibold);
+}
+.team-members {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.team-card {
+    flex-direction: column;
+    align-items: center;
+}
+.team-card img {
+    width: 90%;
+}
+.team-card-text {
+    text-align: center;
+}
+.team-card-text h3 {
+    font-size: var(--h3-d);
+    font-weight: var(--fw-semibold);
+    margin: 1rem 0 0.25rem;
+}
+.team-card-text p {
+    font-size: var(--h5-d);
+    font-weight: var(--fw-medium);
+    margin-top: 0;
+}
+/* Support Section */
+.support {
+    margin: 2rem 0;
+}
+.support h2 {
+    font-size: var(--h2-d);
+    font-weight: var(--fw-semibold);
+    text-align: center;
+}
+.carousel {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.charities {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "charity1 charity 2 charity3 charity4 charity5"
+    "charity6 charity7 charity8 charity9 charity10";
+}
+.charities img {
+    width: 70%;
+}
+.paginator {
+    display: block;
+    width: 6%;
+    margin: 3rem auto;
+}
+/* Footer */
+footer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+footer button {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 3.625rem;
+    width: 15.375rem;
+    padding: 1% 0;
+    font-family: inherit;
+    font-size: var(--p-d);
+    font-weight: var(--fw-medium);
+}
+.contact, .action-buttons {
+    margin-top: 0.75rem;
+}
+/* footer - left section */
+.contact {
+    font-size: var(--p-d);
+    font-weight: var(--fw-medium);
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact span {
+    font-weight: var(--fw-semibold);
+}
+/* footer - middle section */
+.gen {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.gen h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+/* social icons list */
+.gen ul {
+    flex-direction: row;
+    list-style: none;
+    margin: 30px 0;
+    padding: 0 1rem;
+}
+/* social icons imgs */
+.gen ul img {
+    cursor: pointer;
+    height: 2.5rem;
+}
+.mid {
+    margin: 0 3rem;
+}
+#trademark {
+    font-size: var(--small-d);
+    font-weight: var(--fw-regular);
+}
+/* footer - right section */
+.action-buttons {
+    flex-direction: column;
+    justify-content: space-between;
+}
+#last {
+    margin-bottom: -0.5rem;
+}
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 40px 30px;
+    }
+    h1, h2 {
+        font-size: var(--h2-m);
+    }
+    .mobile-hide {
+        display: none;
+    }
+    .desktop-hide {
+        display: block;
+    }
+    /* Header */
+    header {
+        display: flex;
+        align-items: center;
+    }
+    header > * {
+        padding: 0;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .hamburger, .account-mobile {
+        cursor: pointer;
+    }
+    #account-img {
+        display: inline-block;
+    }
+    /* Hero Section */
+    .hero {
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+    .hero img {
+        width: 100%;
+        height: 100%;
+    }
+    .hero-content {
+        width: 100%;
+        font-size: var(--h4-m);
+    }
+    .hero-content h3 {
+        background-position: 0.75rem 1rem;
+        background-size: 7.25rem;
+    }
+    /* Meet the Team Section */
+    .team {
+        background-image: url("./images/wave-mobile.png");
+        height: 55rem;
+        margin: 3rem -30px;
+    }
+    .team-content {
+        margin: 0 auto;
+    }
+    .team-content h2 {
+        font-size: var(--h2-m);
+        margin-left: 30px;
+    }
+    .team-members {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .team-card {
+        width: 40%;
+    }
+    .team-card-text h3 {
+        font-size: var(--h3-m);
+    }
+    .team-card-text p {
+        font-size: var(--h5-m);
+    }
+    /* Support Section */
+    .support h2 {
+        font-size: var(--h2-m);
+    }
+    .scroll-button {
+        width: 1rem;
+    }
+    .charities {
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "charity1 charity 2"
+        "charity6 charity7";
+        width: 80%;
+    }
+    .charities img {
+        margin: 0 auto;
+    }
+    .paginator {
+        width: 30%;
+    }
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer button {
+        height: 3.5rem;
+        width: 12rem;
+        font-size: var(--p-m);
+    }
+    .contact, .action-buttons {
+        margin-top: 0;
+    }
+    /* footer - top section */
+    .gen h4 {
+        font-size: 1.75rem;
+    }
+    .gen ul img {
+        height: 3rem;
+    }
+    .mid {
+        margin: 0 5rem;
+    }
+    /* footer - mid section */
+    .contact {
+        font-size: var(--p-m);
+        text-align: center;
+    }
+    .mobile-buttons {
+        display: grid;
+        gap: 1.75rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "contact donate"
+        "sponsor volunteer";
+        justify-content: center;
+        height: 9rem;
+        margin: 1rem 0 2rem;
+    }
+    #contact {
+        grid-area: contact;
+    }
+    #donate {
+        grid-area: donate;
+    }
+    #sponsor {
+        grid-area: sponsor;
+    }
+    #volunteer {
+        grid-area: volunteer;
+    }
+    /* footer - bottom section */
+    #trademark {
+        font-size: var(--small-m);
+        text-align: center;
+    }
+}
