@@ -1,0 +1,569 @@
+/* General */
+:root{
+    /* Custom Colors */
+    --cream: #FAF5EF;
+    --light-yellow: #FFECC6;
+    --yellow: #FED480;
+    --red: #EC7C6A;
+    --green: #00715D;
+    --blue: #01426A;
+    --black: #1E1E1E;
+    --dark-gray: #303030;
+    /* Font Weights */
+    --fw-regular: 400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    /* Font Sizes */
+    /* desktop */
+    --h2-d: 3.25rem;
+    --h3-d: 2.5rem;
+    --h4-d: 1.75rem;
+    --h5-d: 1.25rem;
+    --p-d: 1.125rem;
+    --small-d: 1rem;
+    /* mobile */
+    --h2-m: 2.5rem;
+    --h3-m: 1.5rem;
+    --h4-m: 1.3125rem;
+    --h5-m: 1.125rem;
+    --p-m: 1rem;
+    --small-m: 0.875rem;
+    /* General Document Styles */
+    background-color: var(--cream);
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+body {
+    margin: 20px 50px;
+}
+h1, h2 {
+    font-size: var(--h2-d);
+    font-weight: var(--fw-semibold);
+}
+.desktop-hide {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+.inline-block {
+    display: inline-block;
+}
+/* Header Section */
+.logo img {
+    cursor: pointer;
+    margin-bottom: -6px;
+    width: 200px;
+}
+nav {
+    float: right;
+    margin-top: 6px;
+    margin-bottom: -8px;
+    padding: 20px 0;
+}
+.tabs-list {
+    list-style: none;
+    padding: 10px 0;
+}
+.tabs-list > * {
+    cursor: pointer;
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+    margin-left: 70px;
+}
+.support-tab {
+    text-decoration: underline;
+}
+.account-tab {
+    padding: 0;
+}
+#account-img {
+    margin-bottom: -5px;
+    width: 30px;
+}
+/* Hero Section */
+.hero {
+    text-align: center;
+}
+.hero h1 {
+    margin-bottom: 0;
+}
+.hero p {
+    font-size: var(--p-d);
+    font-weight: var(--fw-medium);
+    margin-top: 1rem;
+}
+.support-buttons {
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+.support-buttons button {
+    background-color: var(--red);
+    border: none;
+    border-radius: 50px;
+    color: var(--black);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+    height: 5rem;
+    width: 21rem;
+    padding: 1% 0;
+}
+.dropdown {
+    align-items: center;
+    border: 3px solid var(--red);
+    border-radius: 18px;
+    display: none;
+    justify-content: space-between;
+    margin: -2rem auto 3rem;
+    padding: 1rem 1rem 1rem 5rem;
+    text-align: left;
+}
+.dropdown h3 {
+    font-size: var(--h3-d);
+    font-weight: var(--fw-semibold);
+    margin: 0;
+}
+.dropdown p {
+    font-size: var(--h5-d);
+    font-weight: var(--fw-medium);
+    margin: 1.5rem 0;
+    width: 80%;
+}
+.dropdown button {
+    background-color: var(--red);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+    height: 5rem;
+    width: 27rem;
+    margin-top: 1rem;
+    padding: 1% 0;
+}
+.drop-content {
+    margin: 1rem 0;
+}
+.drop-imgs {
+    display: grid;
+    gap: 1rem;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    margin-right: 5rem;
+}
+.drop-imgs img {
+    height: 9.5rem;
+}
+/* VIP Section */
+.vip {
+    align-items: center;
+    background-image: url("./images/vip\ bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: flex-end;
+    height: 80vh;
+    margin: 0 -50px;
+}
+.vip-content {
+    margin: -10px 40px;
+    width: 46%;
+}
+.vip-content h2 {
+    font-size: var(--h2-d);
+    font-weight: var(--fw-semibold);
+    margin: 0;
+}
+.vip-content p {
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+    margin-top: 1rem;
+}
+.vip-content button {
+    background-color: var(--green);
+    border: none;
+    border-radius: 50px;
+    color: var(--cream);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+    height: 5rem;
+    padding: 1% 0;
+    width: 27rem;
+}
+/* Sponsorhip Packages Section */
+.sponsor {
+    margin: 2rem 0;
+}
+.sponsor h2 {
+    font-size: var(--h2-d);
+    font-weight: var(--fw-semibold);
+    text-align: center;
+}
+.carousel {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.scroll-button {
+    cursor: pointer;
+}
+.packages {
+    justify-content: space-evenly;
+    margin: 0 2rem;
+}
+.card {
+    border: 3px solid var(--blue);
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 0 0.5rem;
+    padding: 2rem 1rem;
+}
+.card h3 {
+    font-size: var(--h3-d);
+    font-weight: var(--fw-semibold);
+    margin: 0 0 0 1rem;
+}
+.card ul {
+    margin-bottom: 2rem;
+    width: 80%;
+}
+.card li {
+    font-size: var(--h5-d);
+    font-weight: var(--fw-medium);
+}
+.card button {
+    background-color: var(--red);
+    border: none;
+    border-radius: 50px;
+    color: var(--black);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 1% 0;
+    width: 21rem;
+}
+.paginator {
+    display: block;
+    width: 6%;
+    margin: 3rem auto;
+}
+/* IOU BBQ Section */
+.bbq {
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("./images/bbq\ background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: var(--cream);
+    height: 65vh;
+    margin: 0 -50px;
+}
+.bbq-content {
+    margin: 4rem 40px 0;
+    width: 43%;
+}
+.bbq-content h2 {
+    font-size: var(--h2-d);
+    font-weight: var(--fw-semibold);
+    margin: 0;
+}
+.bbq-content p {
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+    margin: 1rem 0;
+}
+.bbq-content button {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 50px;
+    color: var(--black);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--h4-d);
+    font-weight: var(--fw-medium);
+    height: 5rem;
+    margin-top: 2rem;
+    padding: 1% 0;
+    width: 27rem;
+}
+.bbq img {
+    height: 65%;
+    margin-top: 4rem;
+}
+/* Footer Section */
+footer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+footer button {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--p-d);
+    font-weight: var(--fw-medium);
+    height: 3.625rem;
+    width: 15.375rem;
+    padding: 1% 0;
+}
+.contact, .action-buttons {
+    margin-top: 0.75rem;
+}
+/* footer - left section */
+.contact {
+    flex-direction: column;
+    font-size: var(--p-d);
+    font-weight: var(--fw-medium);
+    justify-content: space-between;
+}
+.contact span {
+    font-weight: var(--fw-semibold);
+}
+/* footer - middle section */
+.gen {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.gen h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+/* social icons list */
+.gen ul {
+    flex-direction: row;
+    list-style: none;
+    margin: 30px 0;
+    padding: 0 1rem;
+}
+/* social icons imgs */
+.gen ul img {
+    cursor: pointer;
+    height: 2.5rem;
+}
+.mid {
+    margin: 0 3rem;
+}
+#trademark {
+    font-size: var(--small-d);
+    font-weight: var(--fw-regular);
+}
+/* footer - right section */
+.action-buttons {
+    flex-direction: column;
+    justify-content: space-between;
+}
+#last {
+    margin-bottom: -0.5rem;
+}
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 40px 30px;
+    }
+    h1, h2 {
+        font-size: var(--h2-m);
+    }
+    .mobile-hide {
+        display: none;
+    }
+    .desktop-hide {
+        display: block;
+    }
+    /* Header Section */
+    header {
+        align-items: center;
+        display: flex;
+    }
+    header > * {
+        padding: 0;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .hamburger, .account-mobile {
+        cursor: pointer;
+    }
+    #account-img {
+        display: inline-block;
+    }
+    /* Hero Section */
+    .hero {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .hero h1 {
+        line-height: 3rem;
+    }
+    .support-buttons {
+        border: 2px solid green;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    /* VIP Section */
+    .vip {
+        background-image: url("./images/vip\ bg\ m.png");
+        flex-direction: column;
+        height: 75vh;
+        justify-content: center;
+    }
+    .vip-content {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 66%;
+    }
+    .vip-content h2 {
+        font-size: var(--h2-m);
+        line-height: 3rem;
+    }
+    .vip-content p {
+        font-size: var(--h4-m);
+        margin-top: 2rem;
+    }
+    .vip-content button {
+        font-size: var(--h4-m);
+        height: 3.5rem;
+        width: 18rem;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    /* Sponsorship Packages Section */
+    .sponsor h2 {
+        font-size: var(--h2-m);
+        line-height: 3rem;
+        margin-bottom: -2.5rem;
+    }
+    .mobile-packages p {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .package-buttons {
+        display: grid;
+        gap: 1rem;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+        margin: 3rem auto;
+    }
+    .package-buttons button {
+        background-color: var(--red);
+        border: none;
+        border-radius: 50px;
+        color: var(--black);
+        cursor: pointer;
+        font-family: inherit;
+        font-size: var(--h4-m);
+        font-weight: var(--fw-medium);
+        height: 3rem;
+        width: 12rem;
+        padding: 1% 0;
+    }
+    /* IOU BBQ Section */
+    .bbq {
+        background-image: url("./images/bbq\ bg\ m.png");
+        flex-direction: column;
+        height: 75vh;
+        justify-content: center;
+    }
+    .bbq-content {
+        width: 75%;
+    }
+    .bbq-content h2 {
+        font-size: var(--h2-m);
+    }
+    .bbq-content p {
+        font-size: var(--h4-m);
+    }
+    .mobile-button {
+        background-color: var(--yellow);
+        border: none;
+        border-radius: 50px;
+        color: var(--black);
+        cursor: pointer;
+        font-family: inherit;
+        font-size: var(--h4-m);
+        font-weight: var(--fw-medium);
+        height: 3.5rem;
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+        padding: 1% 0;
+        width: 18rem;
+    }
+    .bbq img {
+        height: 28%;
+        margin-top: 1rem;
+    }
+    /* Footer Section */
+    footer {
+        align-items: center;
+        flex-direction: column;
+    }
+    footer button {
+        font-size: var(--p-m);
+        height: 3.5rem;
+        width: 12rem;
+    }
+    .contact, .action-buttons {
+        margin-top: 0;
+    }
+    /* footer - top section */
+    .gen h4 {
+        font-size: 1.75rem;
+    }
+    .gen ul img {
+        height: 3rem;
+    }
+    .mid {
+        margin: 0 5rem;
+    }
+    /* footer - mid section */
+    .contact {
+        font-size: var(--p-m);
+        text-align: center;
+    }
+    .mobile-buttons {
+        display: grid;
+        gap: 1.75rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "contact donate"
+        "sponsor volunteer";
+        height: 9rem;
+        justify-content: center;
+        margin: 1rem 0 2rem;
+    }
+    #contact {
+        grid-area: contact;
+    }
+    #donate {
+        grid-area: donate;
+    }
+    #sponsor {
+        grid-area: sponsor;
+    }
+    #volunteer {
+        grid-area: volunteer;
+    }
+    /* footer - bottom section */
+    #trademark {
+        font-size: var(--small-m);
+        text-align: center;
+    }
+}

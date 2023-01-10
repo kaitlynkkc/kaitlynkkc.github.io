@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Support Us</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <div class="inline-block hamburger">
+                <img class="desktop-hide" src="images/charm_menu-hamburger.png" alt="hamburger menu icon">
+            </div>
+            <div class="inline-block logo">
+                <img src="images/logo.png" alt="The IOU Foundation Logo">
+            </div>
+            <nav class="inline-block mobile-hide">
+                <ul class="tabs-list">
+                    <li class="inline-block about-tab">About Us</li>
+                    <li class="inline-block support-tab">Support Us</li>
+                    <li class="inline-block news-tab">News & Events</li>
+                    <li class="inline-block contact-tab">Contact</li>
+                    <li class="inline-block account-tab"><img id="account-img" src="images/User.png" alt="account icon"></li>
+                </ul>
+            </nav>
+            <div class="inline-block account-mobile">
+                <img class="desktop-hide" src="images/user-mobile.png" alt="account icon">
+            </div>
+        </header>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>We would love your support!</h1>
+            <p>Click on each category for more information.</p>
+            <div class="support-buttons flex">
+                <button id="donate" class="toggle" aria-expanded="false">Donate</button>
+                <button id="sponsor" class="toggle" aria-expanded="false">Sponsor</button>
+                <button id="volunteer" class="toggle" aria-expanded="false">Volunteer</button>
+                <button  id="catering" class="toggle" aria-expanded="false">Catering</button>
+            </div>
+            <div class="dropdown flex">
+                <div class="drop-content">
+                    <h3 id="drop-title">How do donations work?</h3>
+                    <p id="drop-p">100% of the proceeds we raise go to recognized tax-exempt public charities, non-profit organizations and philanthropic causes.</br></br>Donate any amount to help make a difference in our Texas community!</p>
+                    <button id="drop-button">Make a Donation</button>
+                </div>
+                <div class="drop-imgs">
+                    <img id="l1" src="./images/lady1.png" alt="">
+                    <img id="m1" src="./images/man1.png" alt="">
+                    <img id="l2" src="./images/lady2.png" alt="">
+                    <img id="m2" src="./images/man2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- VIP Section -->
+        <section class="vip flex">
+            <div class="vip-content">
+                <!-- section content here -->
+                <h2>Become a VIP Member!</h2>
+                <p>Receive invitations to join us throughout the state of Texas, as our VIP Guest, while we continue our commitment to promote co-operative efforts for common good.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+        <!-- Sponsorhip Packages Section -->
+        <section class="sponsor">
+            <h2>Sponsorship Packages</h2>
+            <div class="carousel flex">
+                <img class="scroll-button mobile-hide" src="images/left button.png" alt="left button">
+                <div class="packages flex mobile-hide">
+                    <div class="card flex">
+                        <h3>Title Elite</h3>
+                        <ul>
+                            <li>$15,000</li>
+                            <li>60 Elite Sponsor Private Party Invitations</li>
+                            <li>40 VIP wrist bands at BBQ Austin 2023</li>
+                            <li>40 Raffle Tickets at BBQ Austin 2023</li>
+                            <li>5 Parking Passes at BBQ Austin 2023 + so much more!</li>
+                        </ul>
+                        <button>Register</button>
+                        <button>Download PDF</button>
+                    </div>
+                    <div class="card flex">
+                        <h3>Diamond Elite</h3>
+                        <ul>
+                            <li>$10,000</li>
+                            <li>40 Elite Sponsor Private Party Invitations</li>
+                            <li>32 VIP wrist bands at BBQ Austin 2023</li>
+                            <li>32 Raffle Tickets at BBQ Austin 2023</li>
+                            <li>4 Parking Passes at BBQ Austin 2023 + so much more!</li>
+                        </ul>
+                        <button>Register</button>
+                        <button>Download PDF</button>
+                    </div>
+                    <div class="card flex">
+                        <h3>Platinum Elite</h3>
+                        <ul>
+                            <li>$5,000</li>
+                            <li>24 Elite Sponsor Private Party Invitations</li>
+                            <li>24 VIP wrist bands at BBQ Austin 2023</li>
+                            <li>24 Raffle Tickets at BBQ Austin 2023</li>
+                            <li>3 Parking Passes at BBQ Austin 2023 + so much more!</li>
+                        </ul>
+                        <button>Register</button>
+                        <button>Download PDF</button>
+                    </div>
+                </div>
+                <img class="scroll-button mobile-hide" src="images/right button.png" alt="right button">
+            </div>
+            <img class="paginator mobile-hide" src="images/paginator.png" alt="pagination">
+            <div class="mobile-packages desktop-hide">
+                <p>Click on a package to learn more information and to register.</p>
+                <div class="package-buttons">
+                    <button>Title Elite</button>
+                    <button>Diamond Elite</button>
+                    <button>Platinum Elite</button>
+                    <button>Gold</button>
+                    <button>Silver</button>
+                    <button>Bronze</button>
+                </div>
+            </div>
+        </section>
+        <!-- IOU BBQ Section -->
+        <section class="bbq flex">
+            <div class="bbq-content">
+                <h2>IOU BBQ</h2>
+                <p>When we host our next IOU BBQ Chow Down, you will be able to get the details, and place your order right here.</p>
+                <button class="mobile-hide">Place Order</button>
+            </div>
+            <img src="./images/mission img.png" alt="">
+            <button class="desktop-hide mobile-button">Place Order</button>
+        </section>
+        <!-- Footer Section -->
+        <footer class="flex mobile-hide">
+            <div class="contact flex">
+                <button>Contact Us</button>
+                <p>PO Box 4183<br> Cedar Park, Texas 78630<br><span>info@theioufoundation.org</span></p>
+            </div>
+            <div class="gen flex">
+                <h4>The IOU Foundation</h4>
+                <ul class="flex">
+                    <li><img class="flex" src="images/facebook.png" alt="Social Media"></li>
+                    <li><img class="flex mid" src="images/youtube.png" alt="Social Media"></li>
+                    <li><img class="flex" src="images/instagram.png" alt="Social Media"></li>
+                </ul>
+                <p id="trademark">The IOU Foundation is a Registered Trademark of<br>The IOU Foundation 501(c)(3). All Rights Reserved.</p>
+            </div>
+            <div class="action-buttons flex">
+                <button>Donate</button><br>
+                <button>Sponsor</button><br>
+                <button id="last">Volunteer</button><br>
+            </div>
+        </footer>
+        <!-- Mobile Footer Section -->
+        <div class="desktop-hide">
+            <footer class="flex">
+                <div class="gen flex">
+                    <h4>The IOU Foundation</h4>
+                    <ul class="flex">
+                        <li><img class="flex" src="images/facebook.png" alt="Social Media"></li>
+                        <li><img class="flex mid" src="images/youtube.png" alt="Social Media"></li>
+                        <li><img class="flex" src="images/instagram.png" alt="Social Media"></li>
+                    </ul>
+                </div>
+                <div class="contact flex">
+                    <p>PO Box 4183<br> Cedar Park, Texas 78630<br><span>info@theioufoundation.org</span></p>
+                </div>
+                <div class="mobile-buttons">
+                    <button id="contact">Contact Us</button>
+                    <button id="donate">Donate</button><br>
+                    <button id="sponsor">Sponsor</button><br>
+                    <button id="volunteer">Volunteer</button><br>
+                </div>
+                <p id="trademark">The IOU Foundation is a Registered Trademark of<br>The IOU Foundation 501(c)(3). All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>
